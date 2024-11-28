@@ -11,6 +11,7 @@
 
         </div>
         <div class="col-md-8">
+        {% for post in posts %}
             <div class="cart shadow my-3">
                 <div class="cart-body">
                     <div class="row">
@@ -18,72 +19,18 @@
                             <img src="" alt="img">
                         </div>
                         <div class="col-md-8">
-                            <small> 30th November 2024</small>
+                            <small> {{ post.date_creted }}</small>
                             <hr>
-                            <a class="h3" href=""> First Post </a>
+                            <a class="h3" href=""> {{ post.title }}</a>
                             <p class="text-justify my-3">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem id excepturi sit itaque magnam impedit animi fugit praesentium, minima cupiditate amet molestias, illo, maiores aperiam distinctio dolorum! Quo, excepturi eaque.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="cart shadow my-3">
-                <div class="cart-body">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <img src="" alt="img">
-                        </div>
-                        <div class="col-md-8">
-                            <small> 30th November 2024</small>
-                            <hr>
-                            <a class="h3" href=""> First Post </a>
-                            <p class="text-justify my-3">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem id excepturi sit itaque magnam impedit animi fugit praesentium, minima cupiditate amet molestias, illo, maiores aperiam distinctio dolorum! Quo, excepturi eaque.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="cart shadow my-3">
-                <div class="cart-body">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <img src="" alt="img">
-                        </div>
-                        <div class="col-md-8">
-                            <small> 30th November 2024</small>
-                            <hr>
-                            <a class="h3" href=""> First Post </a>
-                            <p class="text-justify my-3">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem id excepturi sit itaque magnam impedit animi fugit praesentium, minima cupiditate amet molestias, illo, maiores aperiam distinctio dolorum! Quo, excepturi eaque.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="cart shadow my-3">
-                <div class="cart-body">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <img src="" alt="img">
-                        </div>
-                        <div class="col-md-8">
-                            <small> 30th November 2024</small>
-                            <hr>
-                            <a class="h3" href=""> First Post </a>
-                            <p class="text-justify my-3">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem id excepturi sit itaque magnam impedit animi fugit praesentium, minima cupiditate amet molestias, illo, maiores aperiam distinctio dolorum! Quo, excepturi eaque.
+                                {{ post.content }}
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
+        {% endfor %}
     </div>
 
 </div>

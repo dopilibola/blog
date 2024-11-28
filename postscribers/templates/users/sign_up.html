@@ -1,0 +1,27 @@
+{% extends 'partials/base.html'%}
+{% block title %}Sign UP{% endblock %}
+{% block content %}
+<div class="contain">
+    <div class="row mt-5 pt-3">
+        <div class="col-md-4 offset-md-6">
+            <div class="cart">
+                <div class="cart my-5 shadow">
+                    <div class="cart-body"> 
+                        <h4> Sign Up Page</h4>   
+                        <form method="POST">
+                            {% csrf_token %}
+                            {{ form}}
+                            <input class= "btn btn-primary btn-block" type="submit" value="Sign">
+                        </form>
+                    </div>    
+                </div>
+            </div>
+
+        </div>
+
+        </div>
+    </div>
+
+</div>
+{% endblock %}
+

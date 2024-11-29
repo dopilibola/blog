@@ -21,3 +21,6 @@ def sign_up(request):
 def logout_view(request):
     logout(request)
     return redirect('users-login')
+
+def profile(request):
+     return render(request, 'users/profile.html')

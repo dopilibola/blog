@@ -12,13 +12,14 @@
                         <hr>
                         <form method="POST">
                             {% csrf_token %}
-                            {{ form}}
+                            {{ form }}
                             <input class="btn btn-primary btn-block" type="submit" value="Login">
                         </form>
                         <hr>
+
                         <hr>
                         <div class="text-center">
-                           
+                            <a class="btn btn-success" href="{% url 'users-sign-up' %}">Create An Account</a>
                         </div>
                     </div>
                 </div>

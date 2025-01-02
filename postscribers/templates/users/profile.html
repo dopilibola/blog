@@ -54,8 +54,8 @@
                     <div class="col-md-8">
                         <form method="POST" enctype="multipart/form-data">
                             {% csrf_token %}
-                            {{ u_form }}
-                            {{ p_form }}
+                            {{ u_form|crispy }}
+                            {{ p_form|crispy }}
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary btn-sm"
                                     data-dismiss="modal">Cancel</button>
